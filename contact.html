@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Christian Yogendran</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="formValidate.js"></script>
+</head>
+
+<body>
+    <h1>Christian Yogendran- Contact</h1>
+    <nav>
+        <ul id="optionsPanel">
+            <a href="index.html">
+                <li>HOME</li>
+            </a>
+            <a href="services.html">
+                <li>SKILLS</li>
+            </a>
+            <a href="contact.html">
+                <li>CONTACT</li>
+            </a>
+        </ul>
+    </nav>
+    <form id="contactForm">
+        <label for="firstName">First Name </label><input type="text" name="firstName" id="firstName"
+            placeholder="First Name">
+        <p id="firstName_error" class="error">First name is required</p>
+        <div id="commentsBox">
+            <label for="Comments"></label><textarea name="Comments" id="comments" cols="100" rows="20"
+                placeholder="comments, questions, etc..."></textarea>
+            <p id="comments_error" class="error">Comments are required</p>
+        </div>
+        <br><br><br>
+        <label for="lastName">Last Name </label><input type="text" name="lastName" id="lastName"
+            placeholder="Last Name">
+        <p id="lastName_error" class="error">Last name is required</p>
+        <br><br><br>
+        <label for="myEmailAddress">Email Address </label><input type="email" name="myEmailAddress" id="myEmailAddress"
+            placeholder="Email Address">
+        <p id="email_error" class="error">Email is required</p>
+        <p id="emailFormat_error" class="error">Invalid format</p>
+        <br><br><br>
+        <label for="telNumber">Telephone Number </label><input type="tel" name="telNumber" id="telNumber"
+            placeholder="(XXX) XXX-XXXX">
+        <p id="telNumber_error" class="error">Telephone Number is required</p>
+        <p id="telNumberFormat_error" class="error">Invalid Number</p>
+        <br><br><br>
+        <input id="submit" type="submit" value="Submit">
+        <input id="reset" type="reset" value="Reset">
+    </form>
+    <img src="/images/whatsapp.png" alt="WhatsApp" id="whatsapp">
+    <!--https://commons.wikimedia.org/wiki/File:WhatsApp.svg-->
+    <img src="/images/linkedin.png" alt="LinkedIn" id="linkedin">
+    <!--https://commons.wikimedia.org/wiki/File:LinkedIn_logo_initials.png-->
+</body>
+
+</html>
